@@ -1,0 +1,116 @@
+/**
+  |============================
+  | include css partials with
+  | default @import url()
+  |============================
+*/
+/* Common styles */
+@import url('./reset.css');
+@import url('./base.css');
+@import url('./container.css');
+@import url('./animations.css');
+
+/* Sections style */
+@import url('./header.css');
+@import url('./badges.css');
+@import url('./back-link.css');
+
+/* My styles */
+.body {
+  font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    color: #2e2f42;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  justify-content: center;
+  padding: 24px 156px;
+}
+
+.gallery-item {
+  width: calc((100% - 48px) / 3);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  border-radius: 8px;
+  transition: transform 0.5s ease-in-out, box-shadow 0.3s ease;
+}
+
+.gallery-item:hover {
+  transform: scale(1.04);
+  box-shadow: 0 16px 32px rgba(0, 0, 0, 0.25);
+}
+
+.gallery-image {
+  width: 100%;
+  height: 200px;
+  display: block;
+  object-fit: cover;
+  object-position: center;
+}
+
+.feedback-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: space-between;
+  margin: 0 auto;
+  background-color: #f4f4f4;
+  border-radius: 8px;
+  padding: 24px;
+  width: 408px;
+  height: 296px;
+  gap: 8px;
+}
+
+.feedback-form label {
+  margin-right: auto;
+  margin-left: 20px;
+  cursor: pointer;
+}
+
+.feedback-form input {
+  width: 360px;
+  height: 40px;
+  border-radius: 4px;
+  padding-left: 5px;
+  border: 1px solid rgb(150, 150, 150);
+}
+
+.feedback-form textarea {
+  width: 360px;
+  height: auto;
+  border-radius: 4px;
+  margin-bottom: 8px;
+  padding-left: 5px;
+  padding-top: 5px;
+  resize: none;
+  border: 1px solid rgb(150, 150, 150);
+}
+
+.feedback-form textarea:hover {
+  border: 1px solid rgb(130, 130, 130);
+}
+
+.feedback-form button {
+  margin-right: auto;
+  margin-left: 20px;
+  border-radius: 8px;
+  padding: 8px 16px;
+  width: 95px;
+  height: 40px;
+  background-color: #4e75ff;
+  font-weight: 500;
+  color: #fff;
+  margin-top: auto;
+  border: transparent;
+}
+
+.feedback-form button:hover {
+  background-color: #6c8cff;
+}
